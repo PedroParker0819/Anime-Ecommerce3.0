@@ -1,0 +1,365 @@
+/* Estilos globais */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos do header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+  }
+  
+  .logo {
+    width: 170px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  header a {
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  header a:hover {
+    color: black;
+  }
+  
+  .profile-cart {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .cart {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .cart img {
+    width: 30px;
+    margin-left: 10px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .search-bar button {
+    padding: 5px 10px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+  }
+  
+  /* Restante do código CSS... */
+  
+  /* Estilos do slider */
+  .slider {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  
+  .slide video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .slider-button-left {
+    left: 10px;
+  }
+  
+  .slider-button-right {
+    right: 10px;
+  }
+  
+  /* Estilos das categorias */
+  .categories {
+    background-color: crimson;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .categories ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .categories li {
+    margin: 0 10px;
+  }
+  
+  .categories a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+  }
+  
+  .categories a:hover {
+    color: #dc143c;
+    background-color: black;
+    padding: 12px;
+    border: 12px;
+  }
+  
+  /* Estilos dos itens */
+  .items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .item {
+    text-align: center;
+    margin: 10px;
+    width: 200px;
+    background-color: crimson;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    position: relative;
+  }
+  
+  .item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .item h3 {
+    margin: 0;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .item p {
+    font-weight: bold;
+    margin: 10px 0;
+    color: white;
+  }
+  
+  .item .installment-info {
+    margin-top: 10px;
+    color: white;
+  }
+  
+  .item .star-rating {
+    margin-top: 10px;
+    color: white;
+  }
+  
+  .item button {
+    background-color: #f90;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .item button:hover {
+    background-color: #e8800f;
+  }
+  
+  /* Animations */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .item {
+    animation: slideIn 0.5s ease-in-out;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .item:hover {
+    animation: pulse 0.5s infinite;
+  }
+  /* Estilos do footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+/*filtro*/
+
+.filter {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.filter h3 {
+  margin: 0;
+}
+
+.filter-option {
+  margin-top: 10px;
+}
+
+.item {
+  position: relative;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+}
+
+.favorite-button {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 2;
+}
+
+.favorite-button:before {
+  content: "\2661";
+}
+
+.favorite-button.favorited:before {
+  content: "\2665";
+  color: red;
+}
+
+/* Restante do código CSS... */
+
+.product-highlight {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-highlight img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.favorite-button,
+.add-to-cart-button {
+  background-color: #f90;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.favorite-button {
+  margin-right: 10px;
+}
+
+.favorite-button:hover,
+.add-to-cart-button:hover {
+  background-color: #e8800f;
+}
+
+.slide.active .product-highlight {
+  display: block; /* Show the product highlight when the slide is active */
+}
+/* Restante do código CSS... */
+/* Rest of the CSS code... */

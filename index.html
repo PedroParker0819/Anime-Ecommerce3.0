@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Store - E-commerce de Acessórios de Anime</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img src="44681665-eb9e-4c66-8911-44826b3d39af.png" alt="Anime Store" class="logo">
+    </a>
+    <div class="search-bar">
+      <input type="text" placeholder="Pesquisar produtos...">
+      <button type="submit">Buscar</button>
+    </div>
+    <div class="cart">
+      <a href="#"><img src="6b501061-a707-4b14-8d76-7b99b59a73ea.png" alt="Carrinho de Compras"></a>
+      <span class="cart-item-count"></span>
+    </div>
+    <div class="profile">
+      <a href="perfil.html"><img src="jinx.jpg" alt="Perfil do Usuário"></a>
+    </div>
+  </header>
+
+  <div class="slider">
+    <div class="slide">
+      <video src="videoplayback (1).mp4" autoplay muted loop></video>
+      <button class="slider-button slider-button-left">&#8249;</button>
+      <button class="slider-button slider-button-right">&#8250;</button>
+    </div>
+    <div class="slide">
+      <video src="videoplayback (2).mp4" autoplay muted loop></video>
+      <button class="slider-button slider-button-left">&#8249;</button>
+      <button class="slider-button slider-button-right">&#8250;</button>
+    </div>
+  <div class="slide">
+    <video src="megumin-explosion-konosuba-gods-blessing-on-this-wonderful-world-moewalls-com.mp4" autoplay muted loop></video>
+    <button class="slider-button slider-button-left">&#8249;</button>
+    <button class="slider-button slider-button-right">&#8250;</button>
+  </div>
+</div>
+
+  <nav class="categories">
+    <ul>
+      <li><a href="#">Action Figures</a></li>
+      <li><a href="#">Roupas</a></li>
+      <li><a href="#">Gadgets para PC</a></li>
+      <li><a href="#">Mangás</a></li>
+      <li><a href="#">Gadgets de Anime</a></li>
+      <li><a href="#">Itens de Cosplay</a></li>
+      <li><a href="#">Cosplays</a></li>
+    </ul>
+  </nav>
+
+  <div class="items">
+    <div class="filter">
+      <h3>Filtrar por:</h3>
+      <div class="filter-option">
+        <label for="filtro-valor">Valor:</label>
+        <select id="filtro-valor">
+          <option value="todos">Todos</option>
+          <option value="menor-que-50">Menor que R$ 50,00</option>
+          <option value="entre-50-100">R$ 50,00 - R$ 100,00</option>
+          <option value="maior-que-100">Maior que R$ 100,00</option>
+        </select>
+      </div>
+      <div class="filter-option">
+        <label for="filtro-estrelas">Estrelas:</label>
+        <select id="filtro-estrelas">
+          <option value="todos">Todos</option>
+          <option value="1-estrela">1 Estrela</option>
+          <option value="2-estrelas">2 Estrelas</option>
+          <option value="3-estrelas">3 Estrelas</option>
+          <option value="4-estrelas">4 Estrelas</option>
+          <option value="5-estrelas">5 Estrelas</option>
+        </select>
+      </div>
+      <div class="filter-option">
+        <label for="filtro-marcas">Marcas:</label>
+        <select id="filtro-marcas">
+          <option value="todos">Todos</option>
+          <option value="marca-a">Marca A</option>
+          <option value="marca-b">Marca B</option>
+          <option value="marca-c">Marca C</option>
+        </select>
+      </div>
+    </div>
+    <div class="item">
+      <img src="produtos.png" alt="Product 1">
+      <h3>BONECOS - KIMETSU TEAM </h3>
+      <p>$19.99</p>
+      <div class="installment-info">12x de $1.67</div>
+      <div class="star-rating">★★★★★</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="produtos 2.png" alt="Product 2">
+      <h3>Giyu Tomioka - KIMETSU TEAM </h3>
+      <p>$19.99</p>
+      <div class="installment-info">12x de $1.67</div>
+      <div class="star-rating">★★★☆☆</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="produtos3.png" alt="Product 3">
+      <h3>Mitsuri Kanroji - KIMETSU TEAM </h3>
+      <p>$19.99</p>
+      <div class="installment-info">12x de $1.67</div>
+      <div class="star-rating">★★★★☆</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="produto4.png" alt="Product 4">
+      <h3>Shinobu- KIMETSU TEAM </h3>
+      <p>$19.99</p>
+      <div class="installment-info">12x de $1.67</div>
+      <div class="star-rating">★★★☆☆</div>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>Todos os direitos reservados. Anime Store &copy; 2021</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
