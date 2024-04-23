@@ -361,5 +361,63 @@
 .slide.active .product-highlight {
   display: block; /* Show the product highlight when the slide is active */
 }
-/* Restante do código CSS... */
-/* Rest of the CSS code... */
+
+@media only screen and (max-width: 768px) {
+  /* Estilos para telas menores aqui */
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+     flex-direction: column;
+   }
+  .logo {
+     width: 100px;
+   }
+  .search-bar {
+     flex-direction: column;
+   }
+  .slider {
+     height: 200px;
+   }
+  .categories {
+     flex-direction: column;
+   }
+  .items {
+     flex-wrap: wrap;
+   }
+  .item {
+     width: 100%;
+     margin: 10px;
+   }
+ }
+
+ @media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+ .header {
+    padding: 10px;
+  }
+ .categories {
+    padding: 10px;
+  }
+ .items {
+    margin-top: 10px;
+  }
+ .item {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .favorite-button {
+     position: relative;
+     top: 0;
+     right: 0;
+   }
+  .product-highlight {
+     position: relative;
+     top: 0;
+     left: 0;
+   }
+ }
